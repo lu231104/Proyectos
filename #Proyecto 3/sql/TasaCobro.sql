@@ -1,0 +1,7 @@
+SELECT
+    CAST(
+        100.0 * SUM(CASE WHEN BONO_COBRADO = 'SI' THEN 1 ELSE 0 END)
+        / COUNT(*)
+        AS DECIMAL(5,2)
+    ) AS TASA_COBRO
+FROM Bonos;

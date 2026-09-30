@@ -1,0 +1,2 @@
+SELECT SUM(MONTO) AS MontoTotal
+FROM Bonos;
